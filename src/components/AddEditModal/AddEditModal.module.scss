@@ -1,0 +1,25 @@
+@import '../../_constants.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    border-radius: 4px;
+    padding: 32px;
+
+    @media (max-width: $mobileLargeWidth) {
+        width: 250px;
+    }
+}
+
+.form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}

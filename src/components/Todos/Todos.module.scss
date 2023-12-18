@@ -1,0 +1,42 @@
+@import '../../_constants.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.select {
+    width: 10px;
+}
+
+.todo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+    margin-right: 20px;
+    width: 500px;
+
+    @media (max-width: $mobileLargeWidth) {
+        max-width: 300px;
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
